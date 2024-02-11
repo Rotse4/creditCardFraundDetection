@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block style %}
+  <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
+  
+{% endblock %}
+
+
+{% block content %}
+<section>
+    <div class="login-page">
+        
+        <div class="form">
+            <h3>LOGIN TO YOUR ACCOUNT </h3>
+          <!-- <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form> -->
+          <form class="login-form" method="post">
+              {% csrf_token %}
+            <input type="text" name="username" placeholder="username"/>
+            <input type="password"  name="password" placeholder="password"/>
+            <button type="submit">login</button>
+          </form>
+          <br>
+          <p style="color: red;"> {{error}}</p>
+
+        </div>
+      </div>
+</section>
+{% endblock %}
+
+{%block js %}
+<script>
+$('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+ });
+ </script
+{% endblock %}

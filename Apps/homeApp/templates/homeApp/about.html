@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block style %}
+  <link rel="stylesheet" href="{% static 'assets/css/style4.css' %}">
+  
+{% endblock %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+
+{% block content %}
+<main id="main" >
+
+    <!-- ======= Hero Section ======= -->
+    <section id="homesection" style="padding: 0px 0px;">
+      ABOUT SECTION.... 
+      <h4><p>The challenge is to recognise fraudulent credit card transactions so that the customers of credit card companies  are not charged for items that they did not purchase.<br>
+      </h4></p><br>
+      <h2>Main challenges involved in credit card fraud detection are:<br>
+      <h5>
+        <ul>
+          <li>Enormous data is processed every day and the model build must be fast enough to respond to scam in time</li>
+          <li>Imbalanced data i.e most of the transaction(99%) are not fraudulent which makes it really hard for detecting the fraudulent ones</li>
+          <li>data availability as the data is mostly private</li>
+          <li>misclasified data can be another major issue, as not every fraudulent transaction is caught and reported</li>
+          <li>adaptive techniques used against the model by the scammers</li>
+        </ul>
+      </h5>
+      <h2>How to tackle this challenges?</h2>
+      <h5>
+        <ul>
+          <li>The model used must be simple and fast enough to detect the anomally and classify it as fraudulent transaction as quickly as possible</li>
+          <li>Imbalance can be dealt with by properly using methods</li>
+          <li>for protecting the privacy of the user the dimensionality of the data can be reduced</li>
+        </ul>
+      </h5
+    </section><!-- End Hero -->
+  
+    </main>
+  
+{% endblock %}

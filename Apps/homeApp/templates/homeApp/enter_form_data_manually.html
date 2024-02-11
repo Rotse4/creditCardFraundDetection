@@ -1,0 +1,190 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block css %}
+
+
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block content %}
+<main id="main" >
+
+    <!-- ======= Hero Section ======= -->
+    <section id="homesection" style="padding: 0px 0px;">
+ <!--__________________________________ header-box______________________________________________ -->
+ <div id="header-container">
+	<h1 id="header2">CREDIT DISEASE PREDICTION</h1>
+</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+<div class=fraud-container>
+	<div class=fraud-header-container>
+		<h3 class="fraud-header">CHECK YOUR CREDIT DISEASE</h3>
+	</div>
+	<div class="manual-form">
+		<form method="POST" action="{% url 'predict_data_manually' %}">
+			{% csrf_token %}
+
+			<main class="main" style="margin-bottom: 54px;
+			">
+			<div class="manual-inputfield">
+				<label>Time</label><br>
+				<input type="text" name="" placeholder="Enter value of Time">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V1</label><br>
+				<input type="text" name="" placeholder="Enter value of V1">
+			</div>
+			<div class="manual-inputfield">
+				<label>V2</label><br>
+				<input type="text" name="" placeholder="Enter value of V2">
+			</div>
+			<div class="manual-inputfield">
+				<label>V3</label><br>
+				<input type="text" name="" placeholder="Enter value of V3">
+			</div>
+			<div class="manual-inputfield">
+				<label>V4</label><br>
+				<input type="text" name="" placeholder="Enter value of V4">
+			</div>
+			<div class="manual-inputfield">
+				<label>V5</label><br>
+				<input type="text" name="" placeholder="Enter value of V5">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V6</label><br>
+				<input type="text" name="" placeholder="Enter value of V6">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V7</label><br>
+				<input type="text" name="" placeholder="Enter value of V7">
+			</div>
+			<div class="manual-inputfield">
+				<label>V8</label><br>
+				<input type="text" name="" placeholder="Enter value of V8">
+			</div>
+			<div class="manual-inputfield">
+				<label>V9</label><br>
+				<input type="text" name="" placeholder="Enter value of V9">
+			</div>
+			<div class="manual-inputfield">
+				<label>V10</label><br>
+				<input type="text" name="" placeholder="Enter value of V10">
+			</div>
+			<div class="manual-inputfield">
+				<label>V11</label><br>
+				<input type="text" name="" placeholder="Enter value of V11">
+			</div>
+			<div class="manual-inputfield">
+				<label>V12</label><br>
+				<input type="text" name="" placeholder="Enter value of V12">
+			</div>
+			<div class="manual-inputfield">
+				<label>V13</label><br>
+				<input type="text" name="" placeholder="Enter value of V13">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V14</label><br>
+				<input type="text" name="" placeholder="Enter value of V14">
+			</div>
+			<div class="manual-inputfield">
+				<label>V15</label><br>
+				<input type="text" name="" placeholder="Enter value of V15">
+			</div>
+			<div class="manual-inputfield">
+				<label>V16</label><br>
+				<input type="text" name="" placeholder="Enter value of V16">
+			</div>
+			<div class="manual-inputfield">
+				<label>V17</label><br>
+				<input type="text" name="" placeholder="Enter value of V17">
+			</div>
+			<div class="manual-inputfield">
+				<label>V18</label><br>
+				<input type="text" name="" placeholder="Enter value of V18">
+			</div>
+			
+			<div class="manual-inputfield">
+				<label>V19</label><br>
+				<input type="text" name="" placeholder="Enter value of V19">
+			</div>
+			<div class="manual-inputfield">
+				<label>V20</label><br>
+				<input type="text" name="" placeholder="Enter value of V20">
+			</div>
+			<div class="manual-inputfield">
+				<label>V21</label><br>
+				<input type="text" name="" placeholder="Enter value of V21">
+			</div>
+			<div class="manual-inputfield">
+				<label>V22</label><br>
+				<input type="text" name="" placeholder="Enter value of V22">
+			</div>
+			<div class="manual-inputfield">
+				<label>V23</label><br>
+				<input type="text" name="" placeholder="Enter value of V23">
+			</div>
+			<div class="manual-inputfield">
+				<label>V24</label><br>
+				<input type="text" name="" placeholder="Enter value of V24">
+			</div>
+			<div class="manual-inputfield">
+				<label>V25</label><br>
+				<input type="text" name="" placeholder="Enter value of V25">
+			</div>
+			<div class="manual-inputfield">
+				<label>V26</label><br>
+				<input type="text" name="" placeholder="Enter value of V26">
+			</div>
+			<div class="manual-inputfield">
+				<label>V27</label><br>
+				<input type="text" name="" placeholder="Enter value of V27">
+			</div>
+			<div class="manual-inputfield">
+				<label>V28</label><br>
+				<input type="text" name="" placeholder="Enter value of V28">
+			</div>
+			<div class="manual-inputfield">
+				<label>Amount</label><br>
+				<input type="text" name="" placeholder="Enter value of Amount">
+			</div>
+			<div class='btn-cover2'>
+				<input type="submit" name="" class="btn" value="CHECK AND SHOW RESULT"></div>
+		</main>
+			
+		</form>
+	</div>
+</div> 
+     
+
+    </section><!-- End Hero -->
+  
+    </main>
+  
+{% endblock %}
+
+
+
+
+
+{% load static %}
+
+{% block style %}
+
+<link href="{% static 'assets/css/form_data_manualy.css' %}" rel="stylesheet">
+
+
+{% endblock %}
+
+

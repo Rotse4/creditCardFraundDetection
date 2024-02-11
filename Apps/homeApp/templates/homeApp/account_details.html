@@ -1,0 +1,122 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+{% block css %}
+
+<link href="{% static 'assets/css/teststyle.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<main id="main" >
+
+  <!-- ======= Hero Section ======= -->
+  <section id="homesection" style="padding: 0px 0px;">
+	<!--__________________________________ header-box______________________________________________ -->
+	<div id="header-container">
+		<h1 id="header2">STUDENTS
+		</h1>
+	</div>
+<!-- ___________________________________main-division____________________________________________ -->
+
+	<div class=fraud-container style="margin-bottom: 10px;">
+		<div class=fraud-header-container>
+			<h3 class="fraud-header">UPDATED DETAILS</h3>
+		</div>
+		<div class="personaldatacontainer">
+			<form class="personaldata">
+				<h3>User Login Details</h3><hr>
+				<section>
+				<div>
+				<label>User First Name</label><br>
+				<input class="input" type="text" name="" placeholder="User First Name">
+				</div>
+
+				<div>
+				<label>User Last Name</label><br>
+				<input class="input" type="text" name="" placeholder="User Last Name">
+				</div>
+
+				<div>
+				<label>Login ID</label><br>
+				<input class="input" type="text" name="" placeholder="User Login ID">
+				</div>
+				</section>
+				
+				<h3>User Personal Details</h3><hr>
+				<section>
+				<div>
+				<label>Gender</label><br>
+				<article>
+				<input type="radio" class="radio" name="gender">Male
+				<input type="radio" class="radio" name="gender">Female</article>
+				</div>
+
+				<div>
+				<label>User Email</label><br>
+				<input class="input" type="text" name="" placeholder="User Email">
+				</div>
+
+				<div>
+				<label>User Mobile</label><br>
+				<input class="input" type="text" name="" placeholder="User Mobile">
+				</div>
+
+				<div>
+				<label>User Date of Birth</label><br>
+				<input class="input" type="text" name="" placeholder="User Date of Birth">
+				</div>
+
+				<div>
+				<label>User Address Line 1</label><br>
+				<input class="input" type="text" name="" placeholder="User Address">
+				</div>
+
+				<div>
+				<label>User Address Line 2</label><br>
+				<input class="input" type="text" name="" placeholder="User Address">
+				</div>
+
+				<div>
+				<label>User City</label><br>
+				<input class="input" type="text" name="" placeholder="User City">
+				</div>
+
+				<div>
+				<label>User State</label><br>
+				<input class="input" type="text" name="" placeholder="User State">
+				</div>
+
+				<div>
+				<label>User Country</label><br>
+				<input class="input" type="text" name="" placeholder="User Country">
+				</div>
+
+				<div>
+				<label>User Picture</label><br>
+				<input class="input" type="file" class="file" name="">
+				</div>
+
+
+				</section>
+				<div class="btn-cover">
+				<input  class="btn" type="button" name="" value="SUBMIT">
+			</form>
+		</div>
+	</div>
+  </section><!-- End Hero -->
+
+  </main>
+
+  
+{% endblock %}
+
+	
+{% load static %}
+
+{% block style %}
+
+<link href="{% static 'assets/css/account_details.css' %}" rel="stylesheet">
+{% endblock %}
